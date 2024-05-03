@@ -84,12 +84,12 @@ int main() {
     // Input postfix expression from user
     printf("Enter a postfix expression: ");
     fgets(postfix, MAX_SIZE, stdin);
-    postfix[strcspn(postfix, "\n")] = '\0'; // Remove trailing newline character
+    postfix[strcspn(postfix, "\n")] = '\0';
 
     // Evaluate postfix expression
     int result = evaluatePostfix(postfix);
 
-    // Output the result
+
     printf("Result: %d\n", result);
 
     return 0;
