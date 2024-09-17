@@ -1,0 +1,12 @@
+def rfib(n):
+     if n<=1:
+        return n
+     else: 
+         return(rfib(n-1)+rfib(n-2))
+a=int(input("Enter the no of terms:"))
+if a<=0:
+     print("Enter the positive numbers:")
+else:
+     print("fibonacci sequence:")
+     for i in range(a):
+            print(rfib(i))     
